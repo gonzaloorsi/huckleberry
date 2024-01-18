@@ -7,6 +7,65 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  background-color: var(--medium);
+  line-height: 1.5;
 }
 
 /* Add styles here! */
+html {
+  --primary-green : hsl(160deg, 100%, 30%);
+  --secondary-gold-lighter: hsl(45deg, 100%, 50%);
+  --secondary-gold-darker: hsl(45deg, 100%, 40%);
+  --black: hsl(0deg, 0%, 0%);
+  --very-dark: hsl(0deg, 0%, 10%);
+  --dark: hsl(0deg, 0%, 30%);
+  --medium: hsl(0deg, 0%, 40%);
+  --light: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
+}
+
+
+header {
+  padding-top: 96px;
+  background-color: var(--white);
+}
+
+.intro-chunk {
+  width: 330px;
+}
+
+p strong {
+  color: var(--primary-green);
+}
+
+main {
+  padding-top: 72px;
+  border-top: 8px solid var(--light);
+}
+
+.max-width-wrapper {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--white);
+  padding: 8px 24px 24px;
+
+}
+
+main .max-width-wrapper {
+  border-bottom: 8px solid var(--light);
+}
+
+.card {
+  max-width: 47rem;
+}
+
+.indented-heading {
+  margin-top: 0;
+  margin-left: -32px;
+  background-color: var(--secondary-gold-lighter);
+  border-bottom: 5px solid var(--secondary-gold-darker);
+  width: fit-content;
+  padding: 16px 32px 15px 32px;
+}
